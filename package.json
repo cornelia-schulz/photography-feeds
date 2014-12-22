@@ -1,0 +1,33 @@
+{
+  "name": "photography-feeds",
+  "version": "1.0.0",
+  "description": "photography feed reader using the google feed api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firzhugh/photography-feeds.git"
+  },
+  "keywords": [
+    "photography",
+    "feeds",
+    "feedreader",
+    "jasmine",
+    "grunt"
+  ],
+  "author": "Cornelia Schulz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firzhugh/photography-feeds/issues"
+  },
+  "homepage": "https://github.com/firzhugh/photography-feeds",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jasmine": "^0.8.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0"
+  }
+}
