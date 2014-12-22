@@ -64,6 +64,10 @@ ul#nav-bar:hover ul#menu {
     display: block;
 }
 
+li {
+    padding-left: 2%;
+}
+
 #menu li {
     border-bottom: 1px solid #c7c3c3;
     padding-bottom: 2%;
@@ -76,6 +80,7 @@ ul#nav-bar:hover ul#menu {
 
 #top-row {
     padding-bottom: 2%;
+    z-index: 105;
 }
 
 #top-row:hover {
@@ -139,4 +144,12 @@ h3 {
 
 .col-4 {
     width: 33%;
+}
+
+#footer {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+    border-top: 1px solid #c7c3c3;
+    font-size: 0.7em;
 }

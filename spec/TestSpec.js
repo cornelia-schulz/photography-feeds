@@ -11,16 +11,28 @@ $(function () {
 
         it('have a name', function() {
             for(var i = 0, len = photographyFeeds.length; i < len; i++) {
-                //expect(photographyFeeds[i].name).toBeDefined();
+                expect(photographyFeeds[i].name).toBeDefined();
                 expect(photographyFeeds[i].name).not.toBe('');
             }
         });
 
         it('have a url', function() {
             for(var i = 0, len = photographyFeeds.length; i < len; i++) {
-                //expect(photographyFeeds[i].url).toBeDefined();
+                expect(photographyFeeds[i].url).toBeDefined();
                 expect(photographyFeeds[i].url).not.toBe('');
             }
         });
     });
+
+    describe('Menu', function() {
+
+        it('Logo changes on mouseenter and leave', function() {
+            $('#top-row').trigger('mouseenter');
+            var image = $('#logo').attr('src');
+            console.log(image);
+            expect(image).toBe('images/logo-dark.png');
+        })
+
+    });
+
 }());
