@@ -39,7 +39,12 @@ module.exports = function(grunt) {
                     specs: 'spec/*Spec.js',
                     //spec helper files
                     helpers: 'spec/*Helper.js',
-                    keepRunner: true
+                    keepRunner: true,
+                    vendor: [
+                        'lib/vendor/jquery-1.11.1.min.js',
+                        'lib/vendor/jasmine-jquery.js'
+
+                    ]
                 }
             }
         }

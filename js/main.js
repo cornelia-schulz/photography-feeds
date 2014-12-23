@@ -78,21 +78,23 @@ function initialize() {
     }
 
 }
+
 if(google){
     google.load("feeds", "1");
     google.setOnLoadCallback(initialize);
 }
 
-var top = $('#top-row');
-var logo = $('#logo');
-var menu = $('#menu-img');
+function initEvents() {
+    var topRow = $('#top-row');
+    var logo = $('#logo');
+    var menu = $('#menu-img');
 
-$('#top-row').mouseenter(function() {
-    logo.attr('src', 'images/logo-dark.png');
-    menu.attr('src', 'images/menu-icon-dark.png')
-});
-$('#top-row').mouseleave(function() {
-    logo.attr('src', 'images/logo.png');
-    menu.attr('src', 'images/menu-icon.png')
-});
-
+    topRow.mouseenter(function () {
+        logo.attr('src', 'images/logo-dark.png');
+        menu.attr('src', 'images/menu-icon-dark.png')
+    }).mouseleave(function () {
+        logo.attr('src', 'images/logo.png');
+        menu.attr('src', 'images/menu-icon.png')
+    });
+}
+initEvents();

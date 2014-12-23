@@ -11,7 +11,7 @@
     padding-left: 1%;
     z-index: 100;
     background-color: white;
-    height: 8%;
+    height: 9%;
 }
 
 #nav {
@@ -21,6 +21,7 @@
 
 #nav-bar {
     list-style-type: none;
+    background-color: white;
     padding-left: 1%;
     margin: 0;
 }
@@ -36,11 +37,52 @@ h1 {
 }
 
 #logo {
+    background: url("../images/sprite.png") 0 -421px;
+    width: 38px;
+    height: 31px;
     display: inline-block;
 }
 
 #menu-img {
+    background: url("../images/sprite.png") 0 -582px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
+}
+
+#top-row:hover #menu-img {
+    background: url("../images/sprite.png") 0 -502px;
+}
+
+#top-row:hover #logo {
+    background: url("../images/sprite.png") 0 -340px;
+}
+
+ul#nav-bar:hover #search {
+    display: block;
+}
+
+#search {
+    display: none;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-bottom: 1px solid #c7c3c3;
+    border-top: 1px solid #c7c3c3;
+}
+
+#searchbar {
+    margin: 0 auto;
+    padding-left: 2%;
+}
+
+.search {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.5em;
+    background: url("../images/sprite.png") 0 -662px;
+    background-repeat: no-repeat;
 }
 
 #menu {
@@ -86,10 +128,6 @@ li {
 #top-row:hover {
     color: white;
     background-color: black;
-}
-
-#top-row:hover img {
-
 }
 
 #center-image {
@@ -152,4 +190,41 @@ h3 {
     text-align: center;
     border-top: 1px solid #c7c3c3;
     font-size: 0.7em;
+    padding-top: 1%;
 }
+
+#facebook {
+    background: url("../images/sprite.png") 0 -85px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+#twitter {
+    background: url("../images/sprite.png") 0 -742px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+#bloggr {
+    background: url("../images/sprite.png") 0 0;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+#linkedin {
+    background: url("../images/sprite.png") 0 -255px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+#flickr {
+    background: url("../images/sprite.png") 0 -170px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
