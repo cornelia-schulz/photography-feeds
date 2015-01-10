@@ -56,14 +56,14 @@ function initialize() {
             for (var i = 0; i < result.feed.entries.length; i++) {
                 var entry = result.feed.entries[i];
                 var title = entry.title;
-                var content = entry.contentSnippet;
+                var content = entry.content;
                 var author = entry.author;
                 var fetchDate = new Date(entry.publishedDate);
                 var date = fetchDate.toDateString();
                 var link = entry.link;
                 collection.push({
                     title: title,
-                    content: content,
+                    content: $('<div/>').html(content).text(),
                     author: author,
                     date: date,
                     link: link
@@ -133,3 +133,10 @@ function initEvents() {
     });
 }
 initEvents();
+
+
+$('#menu li').click(function(){
+   var li = $(this);
+   var a = $('a', li);
+   document.location = a.attr('href');
+});
