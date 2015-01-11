@@ -238,11 +238,14 @@ h3 {
     display: inline-block;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 480px) {
     .col-4 {
         width: 100%;
     }
     h1 {
         font-size: 1.7em;
+    }
+    #center-image {
+        padding-top: 15%;
     }
 }
