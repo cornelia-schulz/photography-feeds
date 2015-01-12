@@ -107,10 +107,20 @@ ul#nav-bar:hover #search {
 
 ul#nav-bar ul#menu {
     display: none;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 ul#nav-bar:hover ul#menu {
     display: block;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 #menu li {
@@ -132,6 +142,11 @@ li a:hover {
 
 #menu li:hover {
     background-color: #c7c3c3;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 #top-row {
